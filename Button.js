@@ -21,12 +21,13 @@ class OnButton extends Component {
   };
 
   render = () => {
-    const buttonText = this.state.autoRespondOn ? "Turn Off" : "Turn On";
+    const buttonText = this.state.autoRespondOn ? "Turn Me Off" : "Turn Me On";
     return (
       <Button
         onPress={this.onPressButton}
         title={buttonText}
         style={styles.button}
+        color="#7915bc"
       />
     );
   };
@@ -34,10 +35,10 @@ class OnButton extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#9370DB"
+    fontSize: 24,
+    borderRadius: 50
   }
 });
 
